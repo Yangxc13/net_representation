@@ -1,7 +1,5 @@
 
-##Net Representation Learning
-
-#####Yang Xiaocheng 2017210860
+# Net Representation Learning
 
 This is the second homework in class *Advanced Machine Learning* of Professor Jie Tang. We are asked to re-implement four network embedding algorithms, and evaluate them on two Dataset, **Cora** and **Tencent Weibo**.
 
@@ -14,7 +12,7 @@ The four algorithms in this project are **DeepWalk**, **Node2vec**, **LINE** and
 | Node2vec  | 0.7593         | - |
 | LINE      | 0.7556(1st) 0.7000(2nd) | 0.8488(2nd) |
 
-###DeepWalk
+### DeepWalk
 
 Usage:
 
@@ -38,7 +36,7 @@ Reference:
 * Perozzi B, Al-Rfou R, Skiena S. Deepwalk: Online learning of social representations[C]//Proceedings of the 20th ACM SIGKDD international conference on Knowledge discovery and data mining. ACM, 2014: 701-710.
 * [https://github.com/phanein/deepwalk](https://github.com/phanein/deepwalk)
 
-###LINE
+### LINE
 
 Usage:
 
@@ -65,7 +63,7 @@ Reference:
 * Tang J, Qu M, Wang M, et al. Line: Large-scale information network embedding[C]//Proceedings of the 24th International Conference on World Wide Web. International World Wide Web Conferences Steering Committee, 2015: 1067-1077.
 * [https://github.com/snowkylin/line](https://github.com/snowkylin/line)
 
-###GraphGAN
+### GraphGAN
 
 Usage:
 
@@ -86,7 +84,7 @@ Reference:
 * Wang H, Wang J, Wang J, et al. GraphGAN: Graph Representation Learning with Generative Adversarial Nets[J]. arXiv preprint arXiv:1711.08267, 2017.
 * [https://github.com/hwwang55/GraphGAN](https://github.com/hwwang55/GraphGAN)
 
-###Node2vec
+### Node2vec
 
 Usage:
 
@@ -103,7 +101,7 @@ Reference:
 * Tang J, Qu M, Wang M, et al. Line: Large-scale information network embedding[C]//Proceedings of the 24th International Conference on World Wide Web. International World Wide Web Conferences Steering Committee, 2015: 1067-1077.
 * [https://github.com/aditya-grover/node2vec](https://github.com/aditya-grover/node2vec)
 
-###Tencent
+### Tencent
 
 We tried two algorithms, Deepwalk and LINE(2nd)
 
@@ -113,7 +111,7 @@ We tried two algorithms, Deepwalk and LINE(2nd)
 
 With the Deepwalk method, the AUC score is around 0.5. With LINE(2nd), the AUC score gets 0.8488 after 20000 iterations.
 
-###Others
+### Others
 
 logistic_regression.py provides independent embedding evaluation and hyperparameter fine-tuning, it also provides functions that can be called inside the net representaion learning algorithms to online evaluation the embedding, but the latter may contain bug as the accuracy tend to be very low. See `class EvalClass` and `train()`.
 
